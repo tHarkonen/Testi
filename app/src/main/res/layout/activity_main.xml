@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:divider="@drawable/divider_horizontal"
+    android:showDividers="middle">
+
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:divider="@drawable/divider"
+        android:showDividers="middle">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/ic_build_black_24dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/ic_build_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPointButton"
+                android:background="@drawable/ic_add_black_24dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dataResetButton"
+                android:background="@drawable/ic_clear_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+    />
+
+</LinearLayout>
